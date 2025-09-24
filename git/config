@@ -1,0 +1,42 @@
+[user]
+    name = Lucas Velasco
+    email = velascoplucas@gmail.com
+    signingkey = ~/.ssh/id_ed25519
+
+[core]
+    editor = nvim
+    autocrlf = input
+    excludesfile = ~/.gitignore
+
+[push]
+    default = simple
+
+[pull]
+    rebase = true
+
+[merge]
+    tool = vimdiff
+
+[diff]
+    tool = vimdiff
+
+[color]
+    ui = auto
+
+[credential]
+    helper = cache
+
+[commit]
+    gpgSign = true
+
+[gpg]
+    format = ssh
+
+[gpg "ssh"]
+    allowedSignersFile = ~/.config/git/allowed-signers
+
+[filter "lfs"]
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f

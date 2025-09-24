@@ -1,0 +1,17 @@
+[window]
+
+padding = { x = 3, y = 3 }
+
+[colors.primary]
+
+background = "#000000"
+foreground = "#FFB000"
+
+[mouse]
+
+hide_when_typing = true
+
+[font]
+
+normal = { family = "CMU Typewriter Text", style = "Regular" }
+offset = { x = 2, y = 0}
